@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Imagenes - Selección por tamaño del viewport</title>
+  </head>
+  <body>
+    <!-- Queremos mostrar la misma imagen, más grande o más pequeña dependiendo del dispositivo -->
+
+    <!-- <img
+      sizes="[(media query) ancho de la imagen], ancho predeterminado cuando ninguna condición coincide"
+      srcset="ruta width-descriptor"
+      src="fallback para navegadores que no soportan srcset" 
+      alt="texto alternativo"
+    /> -->
+
+    <!-- <img
+      sizes="
+        (min-width: 1200px) 70vw,
+        (min-width: 992px) 900px, 
+        (min-width: 768px) 700px, 
+        (min-width: 576px) 500px, 
+        100vw
+      "
+      srcset="
+        assets/mona-lisa-300.jpg   300w,
+        assets/mona-lisa-600.jpg   600w,
+        assets/mona-lisa-900.jpg   900w,
+        assets/mona-lisa-1200.jpg 1200w
+      "
+      src="assets/mona-lisa-original.jpg"
+      alt="Mona Lisa"
+    /> -->
+
+    <!-- <picture>
+      <source
+        sizes="
+          (min-width: 1200px) 70vw,
+          (min-width: 992px) 900px,
+          (min-width: 768px) 700px,
+          (min-width: 576px) 500px,
+          100vw
+        "
+        srcset="
+          assets/mona-lisa-300.jpg   300w,
+          assets/mona-lisa-600.jpg   600w,
+          assets/mona-lisa-900.jpg   900w,
+          assets/mona-lisa-1200.jpg 1200w
+        "
+      />
+      <img src="assets/mona-lisa-original.jpg" alt="Mona Lisa" />
+    </picture> -->
+
+    <!-- Imagenes Responsives -->
+
+    <!-- <picture>
+      <source media="(min-width: 1200px)" srcset="assets/gorilla-1200.jpg" />
+      <source media="(min-width: 992px)" srcset="assets/gorilla-900.jpg" />
+      <source media="(min-width: 768px)" srcset="assets/gorilla-600.jpg" />
+      <source media="(min-width: 576px)" srcset="assets/gorilla-300.jpg" />
+      <img src="assets/gorilla-original.jpg" alt="Gorilla" />
+    </picture> -->
+
+    <img
+      sizes="(min-width: 700px), (min-width: 400px)"
+      srcset="
+        assets/mona-lisa-300.jpg 300w,
+        assets/mona-lisa-600.jpg 600w,
+        assets/mona-lisa-900.jpg 900w
+      "
+      src="assets/gorilla-original.jpg"
+      alt="Gorilla"
+    />
+
+    <!-- Selección de imagenes para diferentes viewports y densidades de pantalla -->
+    <!-- <picture>
+      <source media="(min-width: 600px)"
+        srcset="html5-logo-xl.png, html5-logo-xl-hd.png 2x, html5-logo-xl-fhd.png 3x" />
+      <source media="(min-width: 300px) and (max-width: 600px)"
+        srcset="html5-logo-large.png, html5-logo-large-hd.png 2x, html5-logo-large-fhd.png 3x" />
+      <source media="(max-width: 50px)"
+        srcset="html5-logo-small.png, html5-logo-small-hd.png 2x, html5-logo-small-fhd.png 3x" />
+      <img srcset="html5-logo-medium.png, html5-logo-medium-hd.png 2x, html5-logo-medium-fhd.png 3x"
+        alt="HTML5 logo" />
+    </picture> -->
+
+    <!-- https://cloudfour.com/thinks/responsive-images-the-simple-way/#fnref-5773-1 -->
+  </body>
+</html>

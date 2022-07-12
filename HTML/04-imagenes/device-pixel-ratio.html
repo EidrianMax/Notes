@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Imagenes - Device Pixel Ratio</title>
+  </head>
+  <body>
+    <!-- Selección por densidad de píxeles: DPI  -->
+
+    <!-- 
+      <img 
+        srcset="ruta densidad de pixeles" 
+        src="fallback para navegadores que no soportan srcset"
+        alt="texto alternativo"  
+      />
+    -->
+
+    <img
+      srcset="
+        assets/gorilla-300.jpg,
+        assets/gorilla-600.jpg 2x,
+        assets/gorilla-900.jpg 3x
+      "
+      src="assets/gorilla-original.jpg"
+      alt="Gorilla"
+    />
+
+    <!-- Nota: La segunda y la tercera imagen su tamaño se divide por el devicePixelRatio -->
+    <!-- Nota: La primera carece de 1x, porque por defecto o en su ausencia el valor es 1x -->
+
+    <!-- https://ed.team/comunidad/explicacion-device-pixel-ratio -->
+  </body>
+</html>

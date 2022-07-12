@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Imagenes - Art Direction</title>
+  </head>
+  <body>
+    <picture>
+      <source media="(orientation: portrait)" srcset="assets/gorilla-600.jpg" />
+      <source
+        media="(orientation: landscape)"
+        srcset="assets/mona-lisa-600.jpg"
+      />
+      <img src="mountain.jpg" alt="Montaña - Mona Lisa - Gorilla" />
+    </picture>
+
+    <!-- 
+      portrait: el alto es mayor que el alto
+      landscape: el ancho es mayor que el alto
+    -->
+  </body>
+</html>
